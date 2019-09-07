@@ -24,6 +24,7 @@ function timeUp() {
 
     wrong++;
 
+    preloadImages('wrong');
     setTimeout(nextQuestion, 3 * 1000);
 }
 
@@ -73,10 +74,12 @@ $(document).on('click', '.choice', function () {
 
     if (correctAnswer === selectedAnswer) {
         right++;
-        nextQuestion();
+        preloadImages('right');
+        setTimeout(nextQuestion, 3 * 1000);
     } else {
         wrong++;
-        nextQuestion();
+        preloadImages('wrong');
+        setTimeout(nextQuestion, 3 * 1000);
     }
 });
 
@@ -110,4 +113,41 @@ $(document).on('click','#reset', function() {
     loadQuestion();
 })
 
-loadQuestion();
+function loadRemainingQuestion() {
+    const remainingQuestion = quizQuestions.length - (currentQuestion + 1);
+    const totalQuestion = quizQuestions.length;
+
+    return `Remaining Question: ${remainingQuestion}/${totalQuestion}`;
+}
+
+function randomImage(images) {
+    const random = Math.floor(Math.random() * images.length);
+    const randomImage = images[random];
+    return randomImage;
+}
+
+// display images for answers
+
+function preloadImages(status) {
+    const correctAnswer = quizQuestions[currentQuestion].correctAnswer;
+
+    if (status === 'right') {
+        $('#game').html(`
+            <p class="preload-image">Правильно</p>
+            <p class="preload-image">The correct answer is ${correctAnswer}</p>
+            <img src="${randomImage(rightImages)}" />
+        `);
+    } else {
+        $('#game').html(`
+            <p class="preload-image">The correct answer is ${correctAnswer}</p>
+            <p class="preload-image">You need to prove your loyalty</p>
+            <img src="${randomImage(wrongImages)}" />
+        `);
+    }
+}
+
+$('#start').click(function() {
+    $('#start').remove();
+    $('#time').html(counter);
+    loadQuestion();
+});
