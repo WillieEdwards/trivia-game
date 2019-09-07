@@ -8,7 +8,7 @@ var timer;
 // if the time is up go to the next question
 
 function nextQuestion() {
-    const isQuestionOver = (quizQuestions.length - 1) === currentQuestion;
+    var isQuestionOver = (quizQuestions.length - 1) === currentQuestion;
     if (isQuestionOver) {
         displayResult();
     } else {
@@ -25,7 +25,7 @@ function timeUp() {
     wrong++;
 
     preloadImages('wrong');
-    setTimeout(nextQuestion, 3 * 1000);
+    setTimeout(nextQuestion, 4 * 1000);
 }
 
 function countDown() {
@@ -44,11 +44,11 @@ function loadQuestion() {
     counter = 20;
     timer = setInterval(countDown, 1000);
 
-    const question = quizQuestions[currentQuestion].question; 
-    const choices = quizQuestions[currentQuestion].choices;  
+    var question = quizQuestions[currentQuestion].question; 
+    var choices = quizQuestions[currentQuestion].choices;  
 
     $('#time').html('Timer: ' + counter);
-    $('#game').html(`
+    $('.jumbotron').html(`
     <h4>${question}</h4>
     ${loadChoices(choices)}
     ${loadRemainingQuestion()}
@@ -69,23 +69,23 @@ function loadChoices(choices) {
 
 $(document).on('click', '.choice', function () {
     clearInterval(timer);
-    const selectedAnswer = $(this).attr('data-answer');
-    const correctAnswer = quizQuestions[currentQuestion].correctAnswer;
+    var selectedAnswer = $(this).attr('data-answer');
+    var correctAnswer = quizQuestions[currentQuestion].correctAnswer;
 
     if (correctAnswer === selectedAnswer) {
         right++;
         preloadImages('right');
-        setTimeout(nextQuestion, 3 * 1000);
+        setTimeout(nextQuestion, 4 * 1000);
     } else {
         wrong++;
         preloadImages('wrong');
-        setTimeout(nextQuestion, 3 * 1000);
+        setTimeout(nextQuestion, 4 * 1000);
     }
 });
 
 function loadRemainingQuestion() {
-    const remainingQuestion = quizQuestions.length - (currentQuestion + 1);
-    const totalQuestion = quizQuestions.length;
+    var remainingQuestion = quizQuestions.length - (currentQuestion + 1);
+    var totalQuestion = quizQuestions.length;
 
     return `Remaining Question: ${remainingQuestion}/${totalQuestion}`;
 }
@@ -93,14 +93,14 @@ function loadRemainingQuestion() {
 // show results for questions
 
 function displayResult() {
-    const result = `
+    var result = `
         <p>You answered ${right} question(s) correct</p>
         <p>You answered ${wrong} question(s) wrong</p>
         <p>Total questions ${quizQuestions.length} question(s) correct</p>
         <button class="btn btn-primary" id="reset">Reset Game</button>
     `;
 
-    $('#game').html(result);
+    $('.jumbotron').html(result);
 }
 
 $(document).on('click','#reset', function() {
@@ -114,31 +114,31 @@ $(document).on('click','#reset', function() {
 })
 
 function loadRemainingQuestion() {
-    const remainingQuestion = quizQuestions.length - (currentQuestion + 1);
-    const totalQuestion = quizQuestions.length;
+    var remainingQuestion = quizQuestions.length - (currentQuestion + 1);
+    var totalQuestion = quizQuestions.length;
 
     return `Remaining Question: ${remainingQuestion}/${totalQuestion}`;
 }
 
 function randomImage(images) {
-    const random = Math.floor(Math.random() * images.length);
-    const randomImage = images[random];
+    var random = Math.floor(Math.random() * images.length);
+    var randomImage = images[random];
     return randomImage;
 }
 
 // display images for answers
 
 function preloadImages(status) {
-    const correctAnswer = quizQuestions[currentQuestion].correctAnswer;
+    var correctAnswer = quizQuestions[currentQuestion].correctAnswer;
 
     if (status === 'right') {
-        $('#game').html(`
+        $('.jumbotron').html(`
             <p class="preload-image">Правильно</p>
             <p class="preload-image">The correct answer is ${correctAnswer}</p>
             <img src="${randomImage(rightImages)}" />
         `);
     } else {
-        $('#game').html(`
+        $('.jumbotron').html(`
             <p class="preload-image">The correct answer is ${correctAnswer}</p>
             <p class="preload-image">You need to prove your loyalty</p>
             <img src="${randomImage(wrongImages)}" />

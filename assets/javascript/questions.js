@@ -1,6 +1,6 @@
 // create a list of questions to be called upon from app.js
 
-const quizQuestions = [
+var quizQuestions = [
     {
         question: "What is a Babushka?",
         choices: ["A dessert pastry", "An old woman", "A Russian stacking doll", "A ski mask"],
@@ -64,11 +64,14 @@ const quizQuestions = [
 
 // display gif for answers
 
-const rightImages = [
-    '..\assets\images\right-bear.webp',
-    '..\assets\images\right-putin.webp'
+var rightImages = [
+    "./assets/images/right-bear.gif",
+    "./assets/images/right-clap.gif",
+    "./assets/images/right-dance.gif"
 ]
 
-const wrongImages = [
-    'assets\images\wrong-police.webp'
+var wrongImages = [
+    "./assets/images/wrong-police.gif",
+    "./assets/images/wrong-raid.gif",
+    "./assets/images/wrong-laugh.gif"
 ]
