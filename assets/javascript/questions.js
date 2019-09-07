@@ -1,7 +1,7 @@
-var quizQuestions = [
+const quizQuestions = [
     {
         question: "What is a Babushka?",
-        choices: ["A dessert pastry", "An old woman", "A Russian stacking doll", "a ski mask"],
+        choices: ["A dessert pastry", "An old woman", "A Russian stacking doll", "A ski mask"],
         correctAnswer: "An old woman"
     },
 
