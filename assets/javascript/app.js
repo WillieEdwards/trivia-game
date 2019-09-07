@@ -55,7 +55,7 @@ function loadQuestion() {
 }
 
 function loadChoices(choices) {
-    var result = "";
+    var result = '';
 
     for (var i = 0; i < choices.length; i++) {
         result += `<p class="choice" data-answer="${choices[i]}">${choices[i]}</p>`;
@@ -86,5 +86,28 @@ function loadRemainingQuestion() {
 
     return `Remaining Question: ${remainingQuestion}/${totalQuestion}`;
 }
+
+// show results for questions
+
+function displayResult() {
+    const result = `
+        <p>You answered ${right} question(s) correct</p>
+        <p>You answered ${wrong} question(s) wrong</p>
+        <p>Total questions ${quizQuestions.length} question(s) correct</p>
+        <button class="btn btn-primary" id="reset">Reset Game</button>
+    `;
+
+    $('#game').html(result);
+}
+
+$(document).on('click','#reset', function() {
+    counter = 20;
+    currentQuestion = 0;
+    right = 0;
+    wrong = 0;
+    timer = null;
+
+    loadQuestion();
+})
 
 loadQuestion();
