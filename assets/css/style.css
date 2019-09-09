@@ -1,5 +1,5 @@
 body {
-  background: url("../images/matryoshka.jpg");
+  background: url("../images/russian_pattern.jpg");
   height: 100%;
 }
   
@@ -15,7 +15,7 @@ body {
   
 .container {
   border-radius: 7px;
-  background-color:rgba(255, 255, 255, 0.8);
+  background-color:rgba(255, 255, 255, 0.9);
   padding: 2%;
   padding: 10px;
   /* box-shadow: 4px 7px rgba(0,115,206, 0.7); */
