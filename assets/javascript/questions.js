@@ -1,4 +1,4 @@
-// create a list of questions to be called upon from app.js
+// create a list of questions to be called from app.js
 
 var quizQuestions = [
     {

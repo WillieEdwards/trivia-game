@@ -1,102 +1,102 @@
 body {
-    background: url("../images/matryoshka.jpg");
-    height: 100%;
-  }
+  background: url("../images/matryoshka.jpg");
+  height: 100%;
+}
   
-  /* general */
+/* general */
   
-  .main-container {
-    min-height: 100vh; 
-    overflow: hidden;
-    display: block;
-    position: relative;
-    padding-bottom: 125px;
-  }
+.main-container {
+  min-height: 100vh; 
+  overflow: hidden;
+  display: block;
+  position: relative;
+  padding-bottom: 125px;
+}
   
-  .container {
-    border-radius: 7px;
-    background-color:rgba(255, 255, 255, 0.8);
-    padding: 2%;
-    padding: 10px;
-    box-shadow: 4px 7px rgba(0,115,206, 0.7);
-  }
+.container {
+  border-radius: 7px;
+  background-color:rgba(255, 255, 255, 0.8);
+  padding: 2%;
+  padding: 10px;
+  /* box-shadow: 4px 7px rgba(0,115,206, 0.7); */
+}
   
-  h1,
-  h2,
-  h3,
-  p {
-    margin-bottom: 20px;
-  }
+h1,
+h2,
+h3,
+p {
+  margin-bottom: 20px;
+}
   
-  p {
-    color: #0073ce;
-    margin-right: 3%;
-  }
+p {
+  color: #0073ce;
+  margin-right: 3%;
+}
     
-  p:last-child {
-    margin-bottom: 0;
-  }
+p:last-child {
+  margin-bottom: 0;
+}
     
-  h1,
-  h2,
-  h3 {
-    font-weight: 650;
-    color: #0073ce;
-  }
+h1,
+h2,
+h3 {
+  font-weight: 650;
+  color: #0073ce;
+}
     
-  h1 {
-    padding-bottom: 20px;
-    font-size: 28px;
-    line-height: 49px;
-    border-bottom: 3px solid rgba(0,115,206, 0.7);
-  }
+h1 {
+  padding-bottom: 20px;
+  font-size: 28px;
+  line-height: 49px;
+  border-bottom: 3px solid rgba(0,115,206, 0.7);
+}
     
-  h2,
-  h3 {
-    font-size: 22px;
-  }
+h2,
+h3 {
+  font-size: 22px;
+}
   
-  /* navbar */
+/* navbar */
   
-  nav {
-    position: fixed;
-    color: #0073ce;
-    border-bottom: 7px solid #0073ce;
-    margin-bottom: 50px;
-  }
+nav {
+  position: fixed;
+  color: #0073ce;
+  border-bottom: 7px solid #0073ce;
+  margin-bottom: 50px;
+}
   
-  .navbar-brand {
-    color: #0073ce;
-    border-radius: 4px;
-    padding-right: 15px;
-    padding-left: 15px;
-    font-size: 28px;
-    font-weight: 650;
-  }
+.navbar-brand {
+  color: #0073ce;
+  border-radius: 4px;
+  padding-right: 15px;
+  padding-left: 15px;
+  font-size: 28px;
+  font-weight: 650;
+}
   
-  /* footer */
+/* footer */
   
-  footer {
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    padding: 30px 0;
-    clear: both;
-    font-size: 12px;
-    color: #ffffff;
-    background-color: #de2110;
-    text-align: center;
-    border-top: 8px solid #0073ce;
-    height: 50px;
-  }
+footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding: 30px 0;
+  clear: both;
+  font-size: 12px;
+  color: #ffffff;
+  background-color: #de2110;
+  text-align: center;
+  border-top: 8px solid #0073ce;
+  height: 50px;
+}
   
-  /* trivia game */
+/* trivia game */
 
-  .choice {
-    border: 1px solid lightgrey;
-    padding: 10px;
-    border-radius: 4px;
-    cursor: pointer;
+.choice {
+  border: 1px solid lightgrey;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 .jumbotron {
