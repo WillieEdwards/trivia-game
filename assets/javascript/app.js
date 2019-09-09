@@ -25,7 +25,7 @@ function timeUp() {
     wrong++;
 
     preloadImages("wrong");
-    setTimeout(nextQuestion, 3 * 1000);
+    setTimeout(nextQuestion, 4 * 1000);
 }
 
 function countDown() {
@@ -75,11 +75,11 @@ $(document).on("click", ".choice", function () {
     if (correctAnswer === selectedAnswer) {
         right++;
         preloadImages("right");
-        setTimeout(nextQuestion, 3 * 1000);
+        setTimeout(nextQuestion, 4 * 1000);
     } else {
         wrong++;
         preloadImages("wrong");
-        setTimeout(nextQuestion, 3 * 1000);
+        setTimeout(nextQuestion, 4 * 1000);
     }
 });
 
@@ -96,7 +96,6 @@ function displayResult() {
     var result = `
         <p>You answered ${right} question(s) correct</p>
         <p>You answered ${wrong} question(s) wrong</p>
-        <p>Total questions ${quizQuestions.length} question(s) correct</p>
         <button class="btn btn-primary" id="reset">Reset Game</button>
     `;
 
@@ -133,15 +132,15 @@ function preloadImages(status) {
 
     if (status === "right") {
         $(".jumbotron").html(`
-            <p class="preload-image">Правильно</p>
+            <p class="preload-image">Да, ты права!</p>
             <p class="preload-image">The correct answer is <b>${correctAnswer}</b></p>
-            <img src="${randomImage(rightImages)}" />
+            <img src="${randomImage(rightImages)}"/>
         `);
     } else {
         $(".jumbotron").html(`
             <p class="preload-image">The correct answer is <b>${correctAnswer}</b></p>
-            <p class="preload-image">You need to prove your loyalty</p>
-            <img src="${randomImage(wrongImages)}" />
+            <p class="preload-image">Нет, ты не прав! Совсем не прав!</p>
+            <img src="${randomImage(wrongImages)}"/>
         `);
     }
 }

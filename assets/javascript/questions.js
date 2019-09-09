@@ -73,5 +73,4 @@ var rightImages = [
 var wrongImages = [
     "./assets/images/wrong-police.gif",
     "./assets/images/wrong-raid.gif",
-    "./assets/images/wrong-laugh.gif"
 ]

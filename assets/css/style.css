@@ -1,5 +1,5 @@
 body {
-    background: url("../images/russian-flag.png");
+    background: url("../images/matryoshka.jpg");
     height: 100%;
   }
   
@@ -15,10 +15,10 @@ body {
   
   .container {
     border-radius: 7px;
-    background-color: #ffffff;
+    background-color:rgba(255, 255, 255, 0.8);
     padding: 2%;
     padding: 10px;
-    box-shadow: 4px 7px #dddddd;
+    box-shadow: 4px 7px rgba(0,115,206, 0.7);
   }
   
   h1,
@@ -29,7 +29,7 @@ body {
   }
   
   p {
-    color: #343a40;
+    color: #0073ce;
     margin-right: 3%;
   }
     
@@ -41,14 +41,14 @@ body {
   h2,
   h3 {
     font-weight: 650;
-    color: #0089cf;
+    color: #0073ce;
   }
     
   h1 {
     padding-bottom: 20px;
     font-size: 28px;
     line-height: 49px;
-    border-bottom: 3px solid #dddddd;
+    border-bottom: 3px solid rgba(0,115,206, 0.7);
   }
     
   h2,
@@ -59,14 +59,15 @@ body {
   /* navbar */
   
   nav {
-    background-color: #0060a8;
-    border-bottom: 7px solid #cccccc;
+    position: fixed;
+    color: #0073ce;
+    border-bottom: 7px solid #0073ce;
     margin-bottom: 50px;
   }
   
   .navbar-brand {
+    color: #0073ce;
     border-radius: 4px;
-    background-color: #0089cf;
     padding-right: 15px;
     padding-left: 15px;
     font-size: 28px;
@@ -82,9 +83,10 @@ body {
     padding: 30px 0;
     clear: both;
     font-size: 12px;
-    color: #cccccc;
+    color: #ffffff;
+    background-color: #de2110;
     text-align: center;
-    border-top: 8px solid #0060a8;
+    border-top: 8px solid #0073ce;
     height: 50px;
   }
   
@@ -95,4 +97,8 @@ body {
     padding: 10px;
     border-radius: 4px;
     cursor: pointer;
+}
+
+.jumbotron {
+  color: #0073ce;
 }
