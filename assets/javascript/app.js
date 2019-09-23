@@ -145,15 +145,8 @@ function preloadImages(status) {
     }
 }
 
-$('#start').click(function() {
+$("#start").click(function() {
     $("#start").remove();
     $("#time").html(counter);
     loadQuestion();
-});
-
-var gameStartAudio = new Audio('assets/audio/bochka-bass-kolbaser.mp3')
-
-$('#start').on('click', function () {
-    gameStartAudio.play();
-    gameStartAudio.setInterval (1*22000);
 });

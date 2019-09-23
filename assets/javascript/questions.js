@@ -2,6 +2,12 @@
 
 var quizQuestions = [
     {
+        question: "What animal is often used to symbolize Russia?",
+        choices: ["Moose", "Squirrel", "Bear", "Tiger"],
+        correctAnswer: "Bear"
+    },
+
+    {
         question: "What is a Babushka?",
         choices: ["A dessert pastry", "An old woman", "A Russian stacking doll", "A ski mask"],
         correctAnswer: "An old woman"
@@ -35,6 +41,24 @@ var quizQuestions = [
         question: "What notable Russian was assassinated in Mexico City in 1940?",
         choices: ["Anton Chekhov", "Mikhail Baryshnikov", "Leon Trotsky", "Sergei Rachmaninoff"],
         correctAnswer: "Leon Trotsky"
+    },
+
+    {
+        question: "Which of these musical works is NOT by Tchaikovsky?",
+        choices: ["The Nutcracker", "The Magic Flute", "1812 Overture", "Swan Lake"],
+        correctAnswer: "The Magic Flute"
+    },
+
+    {
+        question: "Which of these bodies of water does Russia NOT touch?",
+        choices: ["Baltic Sea", "Black Sea", "Caspian Sea", "East China Sea"],
+        correctAnswer: "East China Sea"
+    },
+
+    {
+        question: "Why did the city of Chelyabinsk briefly become famous in 2013?",
+        choices: ["A new record for the coldest temperature on Earth", "The first cloning of a mammal", "A meteor explosion", "A Chechen terrorist bombing"],
+        correctAnswer: "A meteor explosion"
     },
 
     {
