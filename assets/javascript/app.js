@@ -150,3 +150,9 @@ $("#start").click(function() {
     $("#time").html(counter);
     loadQuestion();
 });
+
+var gameStartAudio = new Audio("assets/audio/anthem.mp3")
+
+$('#start').on('click', function () {
+    gameStartAudio.play();
+}); 
