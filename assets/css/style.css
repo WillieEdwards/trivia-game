@@ -15,7 +15,7 @@ body {
 }
 
 a {
-  color: #c60000;
+  color: #f8c600;
   font-size: 20px;
 }
   
@@ -37,7 +37,7 @@ h4 {
 }
 
 .choice {
-  border: 1px solid #c60000;
+  border: 2px solid #c60000;
   padding: 10px;
   cursor: pointer;
 }
@@ -45,11 +45,13 @@ h4 {
 .jumbotron {
   background-color: transparent;
   color: #f8c600;
+  font-weight: bold;
   margin-top: -5%;
 }
 
 .btn {
   color: #f8c600;
+  font-weight: bold;
   background-color: #c60000;
   border-color: #c60000;
   border-radius: 0px;

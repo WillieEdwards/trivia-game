@@ -96,7 +96,7 @@ function displayResult() {
     var result = `
         <p>You answered ${right} question(s) correct</p>
         <p>You answered ${wrong} question(s) wrong</p>
-        <button class="btn btn-primary" id="reset">Reset Game</button>
+        <button class="btn btn-primary" id="reset">Reset</button>
     `;
 
     $(".jumbotron").html(result);
@@ -116,7 +116,7 @@ function loadRemainingQuestion() {
     var remainingQuestion = quizQuestions.length - (currentQuestion + 1);
     var totalQuestion = quizQuestions.length;
 
-    return `Remaining Question: ${remainingQuestion}/${totalQuestion}`;
+    return `Remaining Questions: ${remainingQuestion}/${totalQuestion}`;
 }
 
 function randomImage(images) {

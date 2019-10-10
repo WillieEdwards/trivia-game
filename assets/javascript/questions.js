@@ -84,6 +84,12 @@ var quizQuestions = [
         choices: ["By Ögedei Khan in 1238", "By Napoleon in 1812", "By Hitler in 1942", "Never"],
         correctAnswer: "By Napoleon in 1812"
     },
+    
+    {
+        question: "What year was the fall of the Soviet Union?",
+        choices: ["1989", "1991", "1993", "1995"],
+        correctAnswer: "By Napoleon in 1812"
+    },
 ]
 
 // display gif for answers
