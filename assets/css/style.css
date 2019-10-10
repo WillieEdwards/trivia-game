@@ -1,40 +1,27 @@
 body {
-  background-image: url("../images/kremlin-background.jpg");
+  background-image: url("../images/background.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
   background-size: 100% 100%;
-}
-  
-/* general */
-  
-.main-container {
-  min-height: 100vh; 
-  overflow: hidden;
-  display: block;
-  position: relative;
-  padding-bottom: 125px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
   
 .container {
-  border-radius: 7px;
-  background-color:rgba(255, 255, 255, 0.8);
-  padding: 2%;
-  padding: 10px;
   width: 80%;
-  /* box-shadow: 4px 7px rgba(0,115,206, 0.7); */
 }
-  
-h1,
-h2,
-h3,
-p {
-  margin-bottom: 20px;
+
+a {
+  color: #c60000;
+  font-size: 20px;
 }
   
 p {
-  color: #0073ce;
-  margin-right: 3%;
+  color: #c60000;
+  font-weight: bold;
 }
     
 p:last-child {
@@ -43,66 +30,36 @@ p:last-child {
     
 h1,
 h2,
-h3 {
-  font-weight: 650;
-  color: #0073ce;
+h3,
+h4 {
+  color: #c60000;
+  font-family: 'Staatliches', cursive;
 }
-    
-h1 {
-  padding-bottom: 20px;
-  font-size: 28px;
-  line-height: 49px;
-  border-bottom: 3px solid rgba(0,115,206, 0.7);
-}
-    
-h2,
-h3 {
-  font-size: 22px;
-}
-  
-/* navbar */
-  
-nav {
-  position: fixed;
-  color: #0073ce;
-  border-bottom: 7px solid #0073ce;
-  margin-bottom: 50px;
-}
-  
-.navbar-brand {
-  color: #0073ce;
-  border-radius: 4px;
-  padding-right: 15px;
-  padding-left: 15px;
-  font-size: 28px;
-  font-weight: 650;
-}
-  
-/* footer */
-  
-footer {
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  padding: 30px 0;
-  clear: both;
-  font-size: 12px;
-  color: #ffffff;
-  background-color: #de2110;
-  text-align: center;
-  border-top: 8px solid #0073ce;
-  height: 50px;
-}
-  
-/* trivia game */
 
 .choice {
-  border: 1px solid lightgrey;
+  border: 1px solid #c60000;
   padding: 10px;
-  border-radius: 4px;
   cursor: pointer;
 }
 
 .jumbotron {
-  color: #0073ce;
+  background-color: transparent;
+  color: #f8c600;
+  margin-top: -5%;
+}
+
+.btn {
+  color: #f8c600;
+  background-color: #c60000;
+  border-color: #c60000;
+  border-radius: 0px;
+}
+
+.links {
+  font-family: 'Staatliches', cursive;
+  margin-left: 2%;
+}
+
+#time {
+  font-family: 'Staatliches', cursive;
 }

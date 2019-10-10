@@ -132,7 +132,7 @@ function preloadImages(status) {
 
     if (status === "right") {
         $(".jumbotron").html(`
-            <p class="preload-image">Да, ты права!</p>
+            <p class="preload-image">Да, ты прав!</p>
             <p class="preload-image">The correct answer is <b>${correctAnswer}</b></p>
             <img src="${randomImage(rightImages)}"/>
         `);

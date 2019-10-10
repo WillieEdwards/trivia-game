@@ -89,12 +89,13 @@ var quizQuestions = [
 // display gif for answers
 
 var rightImages = [
-    "./assets/images/right-bear.gif",
-    "./assets/images/right-clap.gif",
-    "./assets/images/right-dance.gif"
+    "./assets/images/bear.gif",
+    "./assets/images/putin.gif",
+    "./assets/images/dance.gif"
 ]
 
 var wrongImages = [
-    "./assets/images/wrong-police.gif",
-    "./assets/images/wrong-raid.gif",
+    "./assets/images/sneeze.gif",
+    "./assets/images/crash.gif",
+    "./assets/images/moonwalk.gif",
 ]
