@@ -88,7 +88,7 @@ var quizQuestions = [
     {
         question: "What year was the fall of the Soviet Union?",
         choices: ["1989", "1991", "1993", "1995"],
-        correctAnswer: "By Napoleon in 1812"
+        correctAnswer: "1991"
     },
 ]
 
