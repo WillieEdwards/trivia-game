@@ -9,21 +9,17 @@ body {
   -o-background-size: cover;
   background-size: cover;
 }
-  
-.container {
-  width: 80%;
-}
 
 a {
   color: #f8c600;
   font-size: 20px;
 }
-  
+
 p {
   color: #c60000;
   font-weight: bold;
 }
-    
+
 p:last-child {
   margin-bottom: 0;
 }
@@ -36,15 +32,22 @@ h4 {
   font-family: 'Staatliches', cursive;
 }
 
+.container {
+background-color: rgba(200, 200, 200, 0.1);
+border-radius: 2px;
+width: 80%;
+}
+
 .choice {
   border: 2px solid #c60000;
+  border-radius: 2px;
   padding: 10px;
   cursor: pointer;
 }
 
 .jumbotron {
   background-color: transparent;
-  color: #f8c600;
+  color: #c60000;
   font-weight: bold;
   margin-top: -5%;
 }
@@ -54,7 +57,7 @@ h4 {
   font-weight: bold;
   background-color: #c60000;
   border-color: #c60000;
-  border-radius: 0px;
+  border-radius: 2px;
 }
 
 .links {
@@ -64,4 +67,5 @@ h4 {
 
 #time {
   font-family: 'Staatliches', cursive;
+  margin-top: 20px;
 }
