@@ -45,6 +45,10 @@ width: 80%;
   cursor: pointer;
 }
 
+.choice:hover {
+  background-color: rgba(200, 15, 15, 0.3)!important;
+}
+
 .jumbotron {
   background-color: transparent;
   color: #c60000;
@@ -60,9 +64,20 @@ width: 80%;
   border-radius: 2px;
 }
 
+.btn:hover {
+  color: #c60000!important;
+  background-color: #f8c600!important;
+  border-color: #c60000!important;
+}
+
 .links {
   font-family: 'Staatliches', cursive;
   margin-left: 2%;
+}
+
+.links a:hover {
+  color: #c60000!important;
+  text-decoration: none;
 }
 
 #time {
